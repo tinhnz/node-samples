@@ -22,8 +22,8 @@ const generateFiles = () => {
 
 const files = generateFiles();
 
-app.get('/api/v1/login', (req, res) => {
-  res.send({ accessToken: 'tom', refreshToken: 'jerry' });
+app.post('/api/v1/login', (req, res) => {
+  res.send({ accessToken: 'tom', refreshToken: 'jerrxxxy' });
 });
 
 app.get('/api/v1/files', (req, res) => {
