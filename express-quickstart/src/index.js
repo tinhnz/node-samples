@@ -22,8 +22,8 @@ const generateFiles = () => {
 
 const files = generateFiles();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.get('/api/v1/login', (req, res) => {
+  res.send({ accessToken: 'tom', refreshToken: 'jerry' });
 });
 
 app.get('/api/v1/files', (req, res) => {
